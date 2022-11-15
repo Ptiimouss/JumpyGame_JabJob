@@ -18,7 +18,7 @@ Le but de ce jeu est de terminer le parcours. Vous aurez pour cela différentes 
 
 Attention, les plateformes s'enlèvent vite sous vos pieds, ne trainez pas !
 
-Si vous tombez, vous pouvez reprendre au dernier CheckPoint si vous tirez sur la Rainbowll au milieu de la carte !
+Si vous tombez, vous pouvez reprendre au dernier CheckPoint si vous tirez sur la Rainbowll au milieu de la carte ! (Si vous êtes trop loin, elle ne se déclenchera pas)
 
 Les moutons vous voient de loin et peuvent vous entendre si vous courrez.
 
