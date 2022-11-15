@@ -13,6 +13,7 @@ public class IG1EnemyController : AgentController
     int _CountTimeStop = 0;
     int _TimeStopBeforeGo = 3;
 
+    [SerializeField] Animator mouton;
     float _DistanceFromTarget;
     float _Precision;
     Vector3 _LastStimulisPosition;
@@ -66,6 +67,9 @@ public class IG1EnemyController : AgentController
         if (_DistanceFromTarget < _Precision)
         {
             _HasATarget = false;
+            mouton.SetTrigger("Idle");
+            mouton.ResetTrigger("Run");
+            mouton.ResetTrigger("Walk");
             _CountTimeStop = 0;
         }
         else if (_Speed == 0 && _HasATarget)
@@ -100,6 +104,9 @@ public class IG1EnemyController : AgentController
             _IsOnPatrol = false;
             _CountTimeStop = 0;
             _HasATarget = true;
+            mouton.SetTrigger("Run");
+            mouton.ResetTrigger("Walk");
+            mouton.ResetTrigger("Idle");
         }
 
         if ((sti.position - transform.position).sqrMagnitude < 3 * 3)
@@ -135,6 +142,9 @@ public class IG1EnemyController : AgentController
     void Patrol()
     {
         _IsOnPatrol = true;
+        mouton.SetTrigger("Walk");
+        mouton.ResetTrigger("Run");
+        mouton.ResetTrigger("Idle");
         _TimeBeforeNextPatrol = Random.Range(3, 8);
 
         newDirection = new Vector3(Random.Range(-35, 126), transform.position.y, Random.Range(-50, 107));

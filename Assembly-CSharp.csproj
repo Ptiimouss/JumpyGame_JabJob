@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C82E6FE8-9AC1-104A-1D2B-4C7B63ACEC97}</ProjectGuid>
+    <ProjectGuid>{DED708E8-57F5-6035-36C7-CA029B59EF7C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,6 +60,7 @@
     <Compile Include="Assets\Scripts\AISenseHearing.cs" />
     <Compile Include="Assets\Scripts\AISense.cs" />
     <Compile Include="Assets\Scripts\NoiseStatus.cs" />
+    <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\Scripts\HSBColor.cs" />
     <Compile Include="Assets\Scripts\AgentController.cs" />
     <Compile Include="Assets\Scripts\DestroyOnCollision.cs" />
@@ -73,7 +74,6 @@
     <Compile Include="Assets\Scripts\AISenseSight.cs" />
     <Compile Include="Assets\Scripts\IG1EnemyController.cs" />
     <Compile Include="Assets\Scripts\Checkpoint.cs" />
-    <Compile Include="Assets\Scripts\DontDestroyOnLoad.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
